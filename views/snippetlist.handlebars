@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="/styles.css">
+
+<header class="header_bar">
+
+  <a href="/"><img src="/ghost.png" alt="ghostrunner" class="main_logo"></a>
+
+
+</header>
+
+<nav class="navigation">
+    <a class="button" href="/profile">Profile</a>
+    <a class="button" href="/snippetlist">My Tasks</a>
+    <a class="button" href="/addsnippet">New Task</a>
+    <a href="/logout">Logout</a>
+</nav>
+
+<h1 id="my_tasks">5K Time</h1>
+
+<form class="search_form" action="/search" method="get">
+  <input class="search" type="text" name="snippets">
+  <button id="search_button">Search</button>
+</form>
+
+<div class="welcome">
+
+    <a class="new_task" href="/addsnippet">Add Time</a>
+
+</div>
+
+<table class="snippet_table" border="1">
+  <tr>
+    <th>
+      Title
+    </th>
+    <th id="body_cell">
+      Run Time
+    </th>
+    <th>
+      Notes
+    </th>
+    <th>
+      Tags
+    </th>
+    <th>
+      Delete
+    </th>
+  </tr>
+</br>
+
+  {{#snippet}}
+  <tr>
+    <td><a href="/addSnippet?id={{_id}}">{{title}}</a></td>
+    <td>{{body}}</td>
+    <td>{{notes}}</td>
+    <td>{{tags}}</td>
+    <td><a href="/deleteSnippet/?id={{_id}}">Delete</a></td>
+  </tr>
+  {{/snippet}}
+
+</table>
