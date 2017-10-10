@@ -28,7 +28,7 @@
   			<a href="#stopWatch" class="watchbutton" onClick="stopwatch.start();">Start</a>
   			<a href="#stopWatch" class="watchbutton" onClick="stopwatch.lap();">Lap</a>
   			<a href="#stopWatch" class="watchbutton" onClick="stopwatch.stop();">End Run</a>
-  			<a href="#stopWatch" class="watchbutton" onClick="stopwatch.restart();">Restart</a>
+  			<a href="#stopWatch" class="watchbutton" onClick="stopwatch.reset();">Reset Timer</a>
   			<a href="#stopWatch" class="watchbutton" onClick="stopwatch.clear();">Clear Laps</a>
   		</nav>
   		<div class="stopwatch"></div>
@@ -45,7 +45,11 @@
       }
 
       reset() {
+          this.running = false;
+          this.time = null;
           this.times = [ 0, 0, 0 ];
+          this.running = false;
+          this.time = null;
       }
 
       start() {
@@ -66,6 +70,10 @@
       stop() {
           this.running = false;
           this.time = null;
+          let times = this.times;
+          let li = document.createElement('li');
+          li.innerText = this.format(times);
+          this.results.appendChild(li);
       }
 
       restart() {
@@ -140,16 +148,8 @@
   <div class="fieldError">{{errors.title.message}}</div>
   <br />
 
-  <input type="textarea" id="text_body" name="body" value="{{snippet.body}}" placeholder="Insert Run Time Here"> </textarea>
+  <input type=text id="text_body" name="stopwatch" value="{{snippet.body}}" class="stopwatch"></textarea>
   <div class="fieldError">{{errors.body.message}}</div>
-  <br />
-
-  <input type="textarea" id="notes" name="notes" value="{{club.materials}}" placeholder="Notes (Optional)" />
-  <div class="fieldError">{{errors.notes.message}}</div>
-  <br />
-
-  <input type="text" id="tags" name="tags" value="{{snippet.tags}}" placeholder="Tags" />
-  <div class="fieldError">{{errors.tags.message}}</div>
   <br />
 
   {{#if snippet._id}}
