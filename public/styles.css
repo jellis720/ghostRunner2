@@ -13,6 +13,7 @@ h1{
 }
 
 .header_bar{
+  margin-top:25px;
   background: black;
   display: flex;
   flex-flow: row nowrap;
@@ -336,6 +337,15 @@ h2{
   flex-direction: column;
   flex-wrap: wrap;
   font-family: 'Orbitron', sans-serif;
+}
+
+ul{
+  text-decoration: none;
+  list-style: none;
+  font-weight: bold;
+  color: purple;
+  font-size: 1.5em;
+  margin: 0 0 0 -40px;
 }
 
 .watchbutton{

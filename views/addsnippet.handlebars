@@ -16,6 +16,7 @@
 
 
 <div class="form">
+  <h4>Click the map below to find the closest trails!</h4>
   <div id="mapIntegration">
   <iframe src="//www.google.com/maps/embed/v1/place?q=trails+nearme
   &zoom=10
@@ -32,6 +33,7 @@
   			<a href="#stopWatch" class="watchbutton" onClick="stopwatch.clear();">Clear Laps</a>
   		</nav>
   		<div class="stopwatch"></div>
+      <h4>Run Time</h4>
   		<ul class="results"></ul>
 
       <script>class Stopwatch {
@@ -148,7 +150,7 @@
   <div class="fieldError">{{errors.title.message}}</div>
   <br />
 
-  <input type=text id="text_body" name="stopwatch" value="{{snippet.body}}" class="stopwatch"></textarea>
+  <input type="text" class="results" name="results" value="{{snippet.body}}"></textarea>
   <div class="fieldError">{{errors.body.message}}</div>
   <br />
 
