@@ -17,19 +17,19 @@
 
 <div class="form">
   <div id="mapIntegration">
-  <iframe src="//www.google.com/maps/embed/v1/place?q=Harrods,Brompton%20Rd,%20UK
-  &zoom=17
+  <iframe src="//www.google.com/maps/embed/v1/place?q=trails+nearme
+  &zoom=10
   &key=AIzaSyCtryTRUGTnlqy4_XGaCi9LqxE5g4CQxF4">
   </iframe>
   </div>
 
   <div id="stopWatch">
   <nav class="controls">
-  			<a href="#" class="button" onClick="stopwatch.start();">Start</a>
-  			<a href="#" class="button" onClick="stopwatch.lap();">Lap</a>
-  			<a href="#" class="button" onClick="stopwatch.stop();">Stop</a>
-  			<a href="#" class="button" onClick="stopwatch.restart();">Restart</a>
-  			<a href="#" class="button" onClick="stopwatch.clear();">Clear Laps</a>
+  			<a href="#" class="watchbutton" onClick="stopwatch.start();">Start</a>
+  			<a href="#" class="watchbutton" onClick="stopwatch.lap();">Lap</a>
+  			<a href="#" class="watchbutton" onClick="stopwatch.stop();">Stop</a>
+  			<a href="#" class="watchbutton" onClick="stopwatch.restart();">Restart</a>
+  			<a href="#" class="watchbutton" onClick="stopwatch.clear();">Clear Laps</a>
   		</nav>
   		<div class="stopwatch"></div>
   		<ul class="results"></ul>
@@ -140,7 +140,7 @@
   <div class="fieldError">{{errors.title.message}}</div>
   <br />
 
-  <input type="textarea" id="text_body" name="body" value="{{snippet.body}}" placeholder="Insert Run Time Here"></textarea>
+  <input type="textarea" id="text_body" name="body" value="{{snippet.body}}" placeholder="Insert Run Time Here"> </textarea>
   <div class="fieldError">{{errors.body.message}}</div>
   <br />
 
@@ -158,3 +158,9 @@
 
   <button class="button-primary">Save Time</button>
 </form>
+</div>
+
+<footer>
+  <p> MTJMGhostRunner</p>
+  <a class="donationLink" href="https://www.flipcause.com/widget/widget_home/MTgzMzY=">Donate</a>
+</footer>
