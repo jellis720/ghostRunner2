@@ -8,6 +8,7 @@ h1{
   font-size: 36px;
   letter-spacing: 2;
   margin: 0;
+  text-shadow: 2px 2px purple;
 }
 
 .header_bar{
@@ -168,14 +169,6 @@ body {
   text-shadow: 5px 5px 5px purple;
 }
 
-@keyframes slide{
-  0%{
-    margin-left: 625px;
-  }
-  100%{
-    margin-left: 4000px;
-  }
-}
 
 #hello_user{
   margin: 10px auto;
@@ -298,7 +291,7 @@ h2{
 }
 
 #my_tasks{
-  color: purple;
+  color: white;
   margin-top: 10px;
 }
 
@@ -316,7 +309,7 @@ h2{
 
 #add_task{
   padding: 10px auto;
-  color: purple;
+  color: white;
 }
 
 
