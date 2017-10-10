@@ -1,14 +1,11 @@
 
-@import url('https://fonts.googleapis.com/css?family=Courgette');
-@import url('https://fonts.googleapis.com/css?family=Euphoria+Script|Kaushan+Script|Seaweed+Script');
-@import url('https://fonts.googleapis.com/css?family=Bangers|Candal|Sigmar+One');
+@import url("https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet");
 
 h1{
-  font-family: "Bangers", cursive;
+  font-family: 'Raleway', sans-serif;
   text-align: center;
   color: white;
-  font-size: 72px;
-  text-decoration: underline;
+  font-size: 36px;
   letter-spacing: 2;
   margin: 0;
 }
@@ -22,7 +19,7 @@ h1{
 }
 
 .header_bar p{
-  font-family: "Sigmar One", cursive;
+  font-family: 'Raleway', sans-serif;
   font-size: 24px;
   color: purple;
 }
@@ -30,7 +27,7 @@ h1{
 .login-page {
   width: 360px;
   padding: 10px;
-  margin: 75px auto;
+  /*margin: 75px auto;*/
 }
 
 .form {
@@ -46,7 +43,7 @@ h1{
 }
 
 .form input {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Raleway', sans-serif;
   outline: 0;
   background: #f2f2f2;
   width: 100%;
@@ -57,7 +54,7 @@ h1{
   font-size: 14px;
 }
 .form button {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   outline: 0;
   background: black;
@@ -150,7 +147,7 @@ body {
   background: -moz-linear-gradient(right, #76b852, #8DC26F);
   background: -o-linear-gradient(right, #76b852, #8DC26F);*/
   background: black;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0px;
@@ -234,7 +231,7 @@ body {
 }
 
 .search{
-  font-family: "Courgette", cursive;
+  font-family: 'Raleway', sans-serif;
   font-size: 14px;
   color: purple;
   text-align: center;
@@ -248,19 +245,19 @@ body {
 }
 
 #search_button{
-  width: 25%;
+  width: 45%;
   margin: 10px auto;
 }
 
 h3{
   color: purple;
   text-align: center;
-  font-family: "Sigmar One", cursive;
+  font-family: 'Raleway', sans-serif;
   font-size: 28px;
 }
 
 h2{
-  font-family: "Candal", cursive;
+  font-family: 'Raleway', sans-serif;
 }
 
 #snip_add{
@@ -274,7 +271,7 @@ h2{
 }
 
 .snippet_table{
-  font-family: "Candal", cursive;
+  font-family: 'Raleway', sans-serif;
   background: white;
   border-color: white;
   width: 80%;
@@ -308,13 +305,17 @@ h2{
 .new_task{
   text-align: center;
   text-decoration: none;
-  font-family: "Candal", cursive;
+  font-family: 'Raleway', sans-serif;
   cursor: pointer;
-  color: purple;
+  color: white;
+  background: gray;
+  border: white 1px solid;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 #add_task{
-  margin: 10px auto;
+  padding: 10px auto;
   color: purple;
 }
 
