@@ -4,6 +4,14 @@ const mongoose = require('mongoose');
 
 const Snippet = require('../models/snippet');
 
+routes.get('/profile', (req, res) => {
+  Snippet.find({ userID: req.user.id })
+    // then show my clubs
+    .then(snippet => res.render('profile', { snippet: snippet }))
+    // handle errors
+    .catch(err => res.send('there was an error :('));
+});
+
 routes.get('/snippetlist', (req, res) => {
   Snippet.find({ userID: req.user.id })
     // then show my clubs
