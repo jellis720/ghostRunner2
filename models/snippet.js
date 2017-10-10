@@ -4,10 +4,8 @@ const Schema = mongoose.Schema;
 
 const snippetSchema = new Schema({
   title: {type: String, unique: true, required: true},
-  date: {type: String},
-  language: {type: String},
   body: {type: String, required: true},
-  notes: {type: String},
+  notes: {type: Number},
   tags: [],
   userID: {type: Schema.Types.ObjectId}
 });

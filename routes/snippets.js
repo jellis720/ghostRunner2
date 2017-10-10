@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const Snippet = require('../models/snippet');
 
 routes.get('/profile', (req, res) => {
-  Snippet.find({ userID: req.user.id })
+  Snippet.find({ }).sort({ notes: 1})
     // then show my clubs
     .then(snippet => res.render('profile', { snippet: snippet }))
     // handle errors
