@@ -73,7 +73,11 @@ h1{
 }
 
 .wrapper{
-  height: 600px;
+  /*height: 600px;*/
+}
+
+.form{
+  margin-bottom: 100px;
 }
 
 .form button:hover,.form button:active,.form button:focus {
@@ -339,6 +343,12 @@ h2{
   font-family: 'Orbitron', sans-serif;
   font-size: 0.8em;
   margin-top: 20px
+}
+
+.stopwatch{
+  margin-top: 14px;
+  border: 1px black dotted;
+  padding: 20px
 }
 
 ul{
