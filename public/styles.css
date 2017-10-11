@@ -1,6 +1,6 @@
 
-@import url("https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet");
-@import url("https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
 
 h1{
   font-family: 'Raleway', sans-serif;
@@ -337,6 +337,8 @@ h2{
   flex-direction: column;
   flex-wrap: wrap;
   font-family: 'Orbitron', sans-serif;
+  font-size: 0.8em;
+  margin-top: 20px
 }
 
 ul{
@@ -344,15 +346,20 @@ ul{
   list-style: none;
   font-weight: bold;
   color: purple;
-  font-size: 1.5em;
-  margin: 0 0 0 -40px;
+  margin: auto auto auto -40px;
+  font-size: 2em
 }
 
 .watchbutton{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   text-decoration: none;
   border: black 1px solid;
   background: gray;
   color: white;
+  font-size: 1.2em;
+  padding: 5px;
 }
 
 .donateBox{

@@ -33,8 +33,8 @@
   			<a href="#stopWatch" class="watchbutton" onClick="stopwatch.clear();">Clear Laps</a>
   		</nav>
   		<div class="stopwatch"></div>
-      <h4>Run Time</h4>
-  		<ul class="results"></ul>
+      <h4>Run Time<ul class="results"></ul></h4>
+
 
       <script>class Stopwatch {
       constructor(display, results) {
@@ -146,11 +146,11 @@
   </script>
   </div>
 <form class="data_form" action="/saveSnippet" method="post">
-  <input type="text" id="title" name="title" value="{{snippet.title}}" placeholder="Title" />
+  <input type="text" id="title" name="title" value="{{user.name}}" placeholder="Name (First/Last)" />
   <div class="fieldError">{{errors.title.message}}</div>
   <br />
 
-  <input type="text" class="results" name="results" value="{{snippet.body}}"></textarea>
+  <input type="text" class="results" name="results" value="{{snippet.body}}" placeholder="Enter Run Time Here"></textarea>
   <div class="fieldError">{{errors.body.message}}</div>
   <br />
 
