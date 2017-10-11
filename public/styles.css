@@ -391,14 +391,37 @@ ul{
 footer{
   bottom: 1;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: purple;
-  padding: 2px 25px;
+  padding: 1px 25px;
   position: fixed;
   width: 100%;
   z-index:1;
   text-decoration: none;
   color: white;
   text-shadow: 2px 2px black;
-  font-size: 1.3em
+  font-size: 1.2em
+}
+
+p{
+  font-size: .5em
+}
+
+.hide{
+  visibility: hidden;
+}
+
+h5{
+  font-family: 'Raleway', sans-serif;
+}
+
+.homeLinks{
+  height: 50px;
+}
+
+.linkDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 100px;
 }

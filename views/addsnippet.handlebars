@@ -33,6 +33,7 @@
   			<a href="#stopWatch" class="watchbutton" onClick="stopwatch.clear();">Clear Lap Time</a>
   		</nav>
   		<div class="stopwatch"></div>
+      <h5>To calculate your run, press "Start" above. This will begin timing. When you complete your 5K, hit "End Run" to stop the timer. Fill in your name below and your time will automatically be added to the scoreboard!</h5>
       <h4>Run Time<ul class="results"></ul></h4>
 
 
@@ -74,6 +75,8 @@
           this.time = null;
           let times = this.times;
           let li = document.createElement('li');
+          let res = document.querySelector("#results");
+          res.value = this.format(times);
           li.innerText = this.format(times);
           this.results.appendChild(li);
       }
@@ -108,7 +111,7 @@
               this.times[1] += 1;
               this.times[2] -= 100;
           }
-          // Minutes are 60 seconds
+          // // Minutes are 60 seconds
           if (this.times[1] >= 60) {
               this.times[0] += 1;
               this.times[1] -= 60;
@@ -146,18 +149,17 @@
   </script>
   </div>
 <form class="data_form" action="/saveSnippet" method="post">
-  <input type="text" id="title" name="title" value="{{user.name}}" placeholder="Name (First/Last)" />
+  <input type="text" id="name" name="title" value="{{user.name}}" placeholder="Name (First/Last)" />
   <div class="fieldError">{{errors.title.message}}</div>
   <br />
 
-  <input type="text" class="results" name="results" value="{{snippet.body}}" placeholder="Enter Run Time Here"></textarea>
+  <input type="text" id="results" name="body" class="hide" value="{{snippet.body}}" placeholder="Enter Run Time Here"></textarea>
   <div class="fieldError">{{errors.body.message}}</div>
   <br />
 
   {{#if snippet._id}}
     <input type="hidden" name="id" value="{{snippet._id}}" />
   {{/if}}
-
   <button class="button-primary">Save Time</button>
 </form>
 </div>
