@@ -425,3 +425,18 @@ h5{
   justify-content: space-between;
   margin-bottom: 100px;
 }
+
+.instructionLink{
+  font-size: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  border: 1px solid purple;
+  border-radius: 10px;
+  padding: 5px;
+  background: purple
+}
+
+.button-primary{
+  margin: -75px
+}
